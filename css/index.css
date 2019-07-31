@@ -130,27 +130,32 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
 body {
-  height: 100%;
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90%;
+  display: flex;
 }
-html h1,
 body h1 {
   font-size: 3rem;
 }
+body h2 {
+  font-size: 2rem;
+}
 header .dropbtn {
-  background-color: white;
-  color: lightgray;
+  background-color: black;
+  color: silver;
   padding: 1rem;
   font-size: 1rem;
-  border: none;
-  width: 200%;
+  border: 1px solid silver;
 }
 header .dropbtn .menu {
-  width: 20%;
+  width: 30%;
   height: 1px;
-  background-color: black;
-  margin: 3% 40%;
+  background-color: silver;
+  margin: 5% 40%;
 }
 header .dropdown {
   position: relative;
@@ -159,13 +164,15 @@ header .dropdown {
 header .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: black;
+  border: 1px solid silver;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 header .dropdown-content a {
-  color: black;
+  color: silver;
+  border: 1px solid silver;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -175,9 +182,41 @@ header .dropdown-content a:hover {
 }
 header .dropdown:hover .dropdown-content {
   display: block;
+  opacity: 0.75;
 }
 header .dropdown:hover .dropbtn {
   background-color: #ddd;
   color: black;
   border: 1px solid black;
+}
+header .left-section {
+  display: flex;
+  flex-direction: column;
+  width: 250%;
+  height: 100vh;
+  border: 1px solid white;
+  align-content: center;
+  color: silver;
+}
+header .left-section .logo {
+  border: 5px solid silver;
+  width: 66%;
+  height: 20%;
+  justify-self: center;
+  margin-left: 20%;
+  padding-top: 20%;
+  text-align: center;
+  border-radius: 50%;
+}
+header .left-section .skills {
+  width: 100%;
+  margin-top: 5%;
+  border: 1px solid white;
+}
+header .left-section .skills h2 {
+  text-align: center;
+}
+header .left-section .skills .skill-list {
+  margin-top: 5%;
+  margin-left: 3%;
 }
