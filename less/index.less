@@ -54,6 +54,14 @@ table {
 }
 @bigfont: 3rem;
 @littlefont: 1rem;
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+}
 html, body {
 	
 }
@@ -69,8 +77,7 @@ body{
 	}
 	height: 90%;
 	width: 100%;
-	display: flex;
-	flex-direction: row;
+	.row();
 	h1{
 		font-size: @bigfont; 
 	}
@@ -139,8 +146,7 @@ body{
 	.dropdown:hover .dropbtn {background-color: #ddd; color: black; border: 1px solid black;}
 
 	.left-section{
-		display: flex;
-		flex-direction: column;
+		.column();
 		width: 16.25vw;
 		height: 100vh;
 		align-content: center;
@@ -179,8 +185,7 @@ body{
 			.skill-list{
 				margin-top: 5%;
 				margin-left: 3%;
-				display: flex;
-				flex-direction: column;
+				.column();
 				.list-item{
 					display: flex;
 					flex-direction: row; 
@@ -215,8 +220,7 @@ body{
 			width: 100%;
 		}
 		.container{
-			display: flex;
-			flex-direction: column;
+			.column();
 			align-items: flex-end;
 			height: 55%;
 			width: 70%;

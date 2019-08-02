@@ -130,6 +130,14 @@ table {
 * {
   box-sizing: border-box;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
 body {
   background-image: url("img/background.png");
   background-repeat: no-repeat;
